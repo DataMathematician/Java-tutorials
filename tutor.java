@@ -6,7 +6,7 @@ class tutor{
         litres = 10;
 
         litres = galons * litres;
-
+ 
         System.out.println("Litres to galons: " + litres);
     }
 }
