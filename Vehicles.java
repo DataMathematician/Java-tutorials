@@ -2,14 +2,16 @@ class Vehicle{
     int passengers;
     int fuelcap;
     int mpg;
+
+    void range(){
+        System.out.println("Minivan: " + passengers + " for range of " + fuelcap * mpg);
+    }
 }
 
 public class Vehicles {
     public static void main(String args[]){
         Vehicle minivan = new Vehicle();
         Vehicle sportscar = new Vehicle();
-
-        int range1,range2;
 
         minivan.passengers = 8;
         minivan.fuelcap = 50;
@@ -19,10 +21,7 @@ public class Vehicles {
         sportscar.fuelcap = 20;
         sportscar.mpg = 8;
 
-        range1 = minivan.fuelcap * minivan.mpg;
-        range2 = sportscar.fuelcap * sportscar.mpg;
-
-        System.out.println("Minivan: " + minivan.passengers + " for range of " + range1);
-        System.out.println("Sportscar: " + sportscar.passengers + " for range of " + range2);
+        minivan.range();
+        sportscar.range();
     }
 }
