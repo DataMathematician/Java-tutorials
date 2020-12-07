@@ -12,10 +12,7 @@ public class Vehicles {
     public static void main(String args[]){
         Vehicle minivan = new Vehicle();
         Vehicle sportscar = new Vehicle();
-
-        int range1;
-        int range2;
-
+        
         minivan.passengers = 8;
         minivan.fuelcap = 50;
         minivan.mpg = 19;
@@ -24,10 +21,7 @@ public class Vehicles {
         sportscar.fuelcap = 20;
         sportscar.mpg = 8;
 
-        range1 = minivan.range();
-        range2 = sportscar.range();
-
-        System.out.println("Minivan: " + minivan.passengers + " for range of " + range1);
-        System.out.println("Minivan: " + sportscar.passengers + " for range of " + range2);
+        System.out.println("Minivan: " + minivan.passengers + " for range of " + minivan.range());
+        System.out.println("Minivan: " + sportscar.passengers + " for range of " + sportscar.range());
     }
 }
